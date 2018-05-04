@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:background="@drawable/fondo_prueba"
+    tools:context="com.app.adda.Adda.MainActivity"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/ivCamera"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:paddingRight="10sp"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/ivGallery"
+            android:visibility="invisible"
+            android:src="@drawable/ic_picture_in_picture_alt_black_24dp"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realiza tu denuncia"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:paddingTop="30sp"
+
+        >
+
+        <EditText
+            android:paddingTop="30sp"
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Nombre"/>
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono *"
+            android:inputType="number"
+
+            />
+
+        <EditText
+            android:id="@+id/comentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Observaciones *"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(*) Requerido"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:paddingTop="20sp"
+            android:id="@+id/ivImage"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            android:paddingBottom="20sp"
+            />
+
+        <!--
+        <Button
+            android:id="@+id/ivUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorTop"
+            android:text="Enviar Denuncia"
+            android:textColor="#fff"
+
+            />-->
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16sp"
+            app:backgroundTint="@color/colorTop"
+            tools:layout_editor_absoluteX="269dp"
+            tools:layout_editor_absoluteY="499dp"
+            android:src="@drawable/senddos"
+            android:id="@+id/fab"
+            app:fabSize="normal"/>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+    <!--
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/ivUpload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="right"
+        android:visibility="invisible"
+        android:src="@drawable/ic_file_upload_black_24dp" />-->
+
+
+</RelativeLayout>
+

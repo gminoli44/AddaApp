@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.app.adda.Adda.se_parte"
+android:background="@drawable/fondo_denuncia">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="50sp"
+    android:paddingRight="30sp"
+    android:paddingLeft="30sp"
+    android:gravity="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.526"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.343">
+
+    <ImageView
+        android:layout_width="62dp"
+        android:layout_height="94dp"
+        android:layout_x="132dp"
+        android:layout_y="11dp"
+        app:srcCompat="@drawable/addalogo2_1"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="111dp"
+        android:layout_y="124dp"
+        android:text="Suscríbete"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_x="42dp"
+        android:layout_y="169dp"
+        android:text="Sé parte de la solución, suscribete y ayuda de manera inmediata en caso de emergencia ambientales, recibe info en tu Email o tu SMS"
+        android:textColor="@color/colorWhite"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"/>
+
+
+
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre (*) "
+        android:inputType="textAutoComplete|textPersonName" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email (*)"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono (*)"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(*) Requerido"
+        android:textSize="12sp"
+        android:paddingBottom="30sp"
+        />
+
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="322dp"
+        android:layout_height="35dp"
+        android:layout_x="0dp"
+        android:layout_y="501dp"
+        android:background="@color/colorTop"
+        android:text="Registrarme"
+        android:textColor="@color/colorWhite"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+
+
+
+
+
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.adda.Adda">
+
+    <uses-permission
+        android:name="android.hardware.camera2"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.app.adda.Adda.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.adda.Adda.Main2Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.adda.Adda.gps"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.adda.Adda.Denuncia_gracias"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.adda.Adda.info_adda"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.adda.Adda.se_parte"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.adda.Adda.llamadas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.adda.Adda.Mas_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.adda.Adda.registro_gracias"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.adda.Adda.usar_adda"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.adda.Adda.Slider"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.adda.Adda.floatb"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.app.adda.Adda.terminos"></activity>
+    </application>
+
+</manifest>

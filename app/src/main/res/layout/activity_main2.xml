@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.adda.Adda.Main2Activity"
+    android:background="@drawable/fondo_adda_3">
+
+    <AbsoluteLayout
+        android:layout_width="314dp"
+        android:layout_height="558dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31">
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="140dp"
+            android:layout_x="117dp"
+            android:layout_y="0dp"
+            app:srcCompat="@drawable/addalogo2_1"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_x="168dp"
+            android:layout_y="183dp"
+            android:background="@drawable/separte_bb"
+            android:onClick="se_parte"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_x="0dp"
+            android:layout_y="349dp"
+            android:background="@drawable/op3"
+            android:onClick="button_info"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_x="0dp"
+            android:layout_y="183dp"
+            android:background="@drawable/op1"
+            android:onClick="denuncias"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_x="168dp"
+            android:layout_y="350dp"
+            android:background="@drawable/op4"
+            android:onClick="llamadas"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <TextView
+            android:id="@+id/cerca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="0dp"
+            android:layout_y="529dp"
+            android:gravity="center"
+            android:paddingTop="10sp"
+            android:text="Acerca de Adda"
+            android:onClick="usar_adda"
+            android:textColor="@color/colorWhite" />
+
+    </AbsoluteLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
